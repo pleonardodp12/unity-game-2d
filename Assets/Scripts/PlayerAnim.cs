@@ -14,11 +14,8 @@ public class PlayerAnim : MonoBehaviour
 
     void Update()
     {
-
         OnMove();
-
         OnRun();
-        
     }
 
 

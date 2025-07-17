@@ -19,12 +19,12 @@ MonoBehaviour:
   - actorName: 
     profile: {fileID: 0}
     sentence:
-      portuguese: "Ol\xE1 mundo"
-      english: 
-      spanish: 
+      portuguese: "Ol\xE1"
+      english: Hello
+      spanish: Hola
   - actorName: 
     profile: {fileID: 0}
     sentence:
       portuguese: Tudo bem?
-      english: 
-      spanish: 
+      english: All right?
+      spanish: Que passa?

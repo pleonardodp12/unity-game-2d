@@ -61,10 +61,14 @@ public class NPC_Dialogue : MonoBehaviour
         if(hit != null)
         {
             playerHit = true;
-        } else
+        }
+        else
         {
             playerHit = false;
             DialogueControl.instance.dialogueObj.SetActive(false);
+            DialogueControl.instance.IsShowing = false;
+            DialogueControl.instance.Sentences = null;
+            DialogueControl.instance.speechText.text = "";
 
         }
     }

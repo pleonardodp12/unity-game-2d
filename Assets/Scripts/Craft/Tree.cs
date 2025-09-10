@@ -12,6 +12,8 @@ public class Tree : MonoBehaviour
 
     [SerializeField] private ParticleSystem leafs;
 
+    private bool isCut;
+
     public void OnHit()
     {
         treeHealth--;
@@ -28,12 +30,13 @@ public class Tree : MonoBehaviour
             }
             
             anim.SetTrigger("cut");
+            isCut = true;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Axe"))
+        if (collision.CompareTag("Axe") && !isCut)
         {
             OnHit();
         }
